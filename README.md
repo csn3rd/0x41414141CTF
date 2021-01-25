@@ -2,11 +2,12 @@
 `I think offshift promised to opensource some of their code`
 
 # Solution
-1. Look up offshift on Github and find [offshift-protocol](https://github.com/offshift-protocol)
+<ol>
+<li> Look up offshift on Github and find [offshift-protocol](https://github.com/offshift-protocol)</li>
 
-2. Look at their only repository, [promo](https://github.com/offshift-protocol/promo), and look at all commits. There is a [leftover pyc file] (https://github.com/offshift-protocol/promo/blob/dc43c1ac33f767a7d30dbeab123a1c87566e885d/__pycache__/script.cpython-38.pyc).
+<li>Look at their only repository, [promo](https://github.com/offshift-protocol/promo), and look at all commits. There is a [leftover pyc file] (https://github.com/offshift-protocol/promo/blob/dc43c1ac33f767a7d30dbeab123a1c87566e885d/__pycache__/script.cpython-38.pyc).</li>
 
-3. Download the pyc file and decompile it to readable python code.
+<li>Download the pyc file and decompile it to readable python code.</li>
 
 Decompiled Python Code:
 ```
@@ -16,7 +17,7 @@ cipher2 = ['NDE=', 'NTM=', 'NTM=', 'NDk=', 'NTA=', 'MTIz', 'MTEw', 'MTEw', 'MzI=
 cipher1 = [base64.b64encode(str(ord(i) ^ 65).encode()) for i in secret]
 ```
 
-4. Reverse engineer the program and get the secret.
+<li>Reverse engineer the program and get the secret.</li>
 
 Python code to reverse the process.
 ```
@@ -27,20 +28,20 @@ print(*decipher, sep='')
 Output:
 https://archive.is/oMl59
 
-5. Go to archive page and read post.
+<li>Go to archive page and read post.</li>
 
 ```
 super secret random file
 https://mega.nz/file/AAdDyIoB#gpj5s9N9-VnbNhSdkJ24Yyq3BWSYimoxanP-p03gQWs
 ```
 
-6. Go to the file and download smashing.pdf.
+<li>Go to the file and download smashing.pdf.</li>
 
 File: [smashing.pdf](smashing.pdf)
 
-7. PDF is corrupted and can't be opened. Looking at the hex, it looks like it was also decrypted with the original script.
+The PDF is corrupted and can't be opened. Looking at the hex, it looks like it was also decrypted with the original script.
 
-8. Reverse engineer the program with the hex content to get the original pdf file.
+<li>Reverse engineer the program with the hex content to get the original pdf file.</li>
 
 Python code to reverse the process.
 ```
@@ -49,8 +50,9 @@ smashingdict = ["0x{:02x}".format(int(smashing[i:i+2], 16)^65)[2:] for i in rang
 print(*smashingdict, sep='')
 ```
 
-9. Take the decoded hex content and convert it to a new file.
+<li>Take the decoded hex content and convert it to a new file.</li>
 
 Output File: [smashing2.pdf](smashing2.pdf)
 
-10. To be continued by Tuz
+<li>To be continued by Tuz.</li>
+</ol>
