@@ -2,7 +2,7 @@
 `I think offshift promised to opensource some of their code`
 
 # Solution
-Look up offshift on Github and find [offshift-protocol](https://github.com/offshift-protocol)</li>
+Look up offshift on Github and find [offshift-protocol](https://github.com/offshift-protocol).
 
 Look at their only repository, [promo](https://github.com/offshift-protocol/promo), and look at all commits. There is a [leftover pyc file] (https://github.com/offshift-protocol/promo/blob/dc43c1ac33f767a7d30dbeab123a1c87566e885d/__pycache__/script.cpython-38.pyc).</li>
 
