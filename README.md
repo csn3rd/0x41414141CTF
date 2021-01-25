@@ -3,6 +3,7 @@
 <summary>
 I think offshift promised to opensource some of their code
 </summary>
+<br>
 
 ## Solution
 Look up offshift on Github and find [offshift-protocol](https://github.com/offshift-protocol).
@@ -58,12 +59,14 @@ Output File: [smashing2.pdf](smashing2.pdf)
 
 To be continued by Tuz.
 </details>
+<br>
 
 # Challenge: optimizer
 <details>
 <summary>
 US instance: 45.134.3.200 9660
 </summary>
+<br>
 
 ## Solution
 Let's connect to the server and see what happens.
