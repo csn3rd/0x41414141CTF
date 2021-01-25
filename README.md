@@ -1,9 +1,8 @@
+# Challenge: 0x41414141
 <details>
 <summary>
-Challenge: 0x41414141
+I think offshift promised to opensource some of their code
 </summary>
-
-`I think offshift promised to opensource some of their code`
 
 ## Solution
 Look up offshift on Github and find [offshift-protocol](https://github.com/offshift-protocol).
@@ -60,12 +59,11 @@ Output File: [smashing2.pdf](smashing2.pdf)
 To be continued by Tuz.
 </details>
 
+# Challenge: optimizer
 <details>
 <summary>
-Challenge: optimizer
+US instance: 45.134.3.200 9660
 </summary>
-
-`US instance: 45.134.3.200 9660`
 
 ## Solution
 Let's connect to the server and see what happens.
