@@ -57,7 +57,20 @@ Take the decoded hex content and convert it to a new file.
 
 Output File: [smashing2.pdf](smashing2.pdf)
 
-To be continued by Tuz.
+We can run `strings` on the file to see if there's anything interesting in the file. We find that there is a "flag.txt" file hidden inside. We can extract this using binwalk. 
+
+When we run `binwalk -e smashing2.pdf`, we find an password protected zip file. We can use John the Ripper to figure out the password with the following commands.
+
+```
+zip2john ./encrypted.zip
+john --wordlist=rockyou.txt encrypted.john
+```
+
+We discover that the password for the zip file is `passwd`. We can now unzip encrypted.zip entering passwd as the passsword. Once unzipped, we can open flag.txt to get the flag.
+
+## Flag
+`flag{1t_b33n_A_l0ng_w@y8742}`
+
 </details>
 <br>
 
